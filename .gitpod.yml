@@ -1,0 +1,13 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: npm install
+    command: npm start
+
+ports:
+  # porta di Expo Web
+  - port: 19006
+    onOpen: open-preview
+  # porta del server Metro (se necessario)
+  - port: 19000
+    onOpen: ignore
